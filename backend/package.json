@@ -5,7 +5,7 @@
   "scripts": {
     "start": "node dist/main.js",
     "start:dev": "ts-node src/main.ts",
-    "build": "tsc"
+    "build": "npm install --include=dev && tsc"
   },
   "dependencies": {
     "@nestjs/common": "^10.0.0",
