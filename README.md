@@ -4,6 +4,8 @@ A clean, fast personal task management app built with **Next.js 14** (frontend) 
 
 ---
 
+![alt text](image.png)
+
 ## 🔗 Live Links
 
 | Service      | URL                                                  |
