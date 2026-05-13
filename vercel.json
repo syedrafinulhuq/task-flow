@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "projects": [
+    {
+      "name": "task-flow-frontend",
+      "rootDirectory": "frontend"
+    },
+    {
+      "name": "task-flow-backend",
+      "rootDirectory": "backend"
+    }
+  ]
+}
