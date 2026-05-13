@@ -4,14 +4,26 @@ A clean, fast personal task management app built with **Next.js 14** (frontend) 
 
 ---
 
+## 🔗 Live Links
+
+| Service      | URL                                                  |
+|--------------|------------------------------------------------------|
+| **Live App** | https://task-flow-frontend-chk3.onrender.com         |
+| **API Docs** | https://task-flow-fis2.onrender.com/api/docs         |
+| **GitHub**   | https://github.com/syedrafinulhuq/task-flow          |
+
+---
+
 ## Tech Stack
 
-| Layer    | Technology                        |
-|----------|-----------------------------------|
-| Frontend | Next.js 14, React 18, TypeScript  |
-| Backend  | NestJS 10, TypeScript             |
+| Layer    | Technology                         |
+|----------|------------------------------------|
+| Frontend | Next.js 14, React 18, TypeScript   |
+| Backend  | NestJS 10, TypeScript              |
 | Database | PostgreSQL (via node-postgres `pg`) |
-| Styling  | Custom CSS (no framework)         |
+| Styling  | Custom CSS (no framework)          |
+| API Docs | Swagger UI (`@nestjs/swagger`)     |
+| Hosting  | Render (frontend + backend + DB)   |
 
 ---
 
@@ -47,7 +59,7 @@ A clean, fast personal task management app built with **Next.js 14** (frontend) 
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/task-flow.git
+git clone https://github.com/syedrafinulhuq/task-flow.git
 cd task-flow
 ```
 
@@ -139,10 +151,10 @@ npm run dev
 
 ### 5. Open the app
 
-| Service      | URL                             |
-|--------------|---------------------------------|
-| App          | http://localhost:3000           |
-| Swagger Docs | http://localhost:4000/api/docs  |
+| Service      | URL                            |
+|--------------|--------------------------------|
+| App          | http://localhost:3000          |
+| Swagger Docs | http://localhost:4000/api/docs |
 
 > Both backend and frontend terminals must be running at the same time.
 
@@ -175,14 +187,14 @@ npm run dev
 
 | Method   | Endpoint                | Description                                            | Status Codes  |
 |----------|-------------------------|--------------------------------------------------------|---------------|
-| `GET`    | `/api/tasks`            | List all tasks (supports `?status=` and `?priority=` filters) | 200      |
+| `GET`    | `/api/tasks`            | List all tasks (supports `?status=` and `?priority=` filters) | 200     |
 | `GET`    | `/api/tasks/:id`        | Get a single task by ID                                | 200, 404      |
 | `POST`   | `/api/tasks`            | Create a new task                                      | 201, 400      |
 | `PUT`    | `/api/tasks/:id`        | Update task fields                                     | 200, 400, 404 |
 | `PATCH`  | `/api/tasks/:id/toggle` | Toggle pending ↔ completed                             | 200, 404      |
 | `DELETE` | `/api/tasks/:id`        | Delete a task                                          | 204, 404      |
 
-Full interactive docs available at **http://localhost:4000/api/docs**
+Full interactive docs: **https://task-flow-fis2.onrender.com/api/docs**
 
 ---
 
@@ -246,7 +258,8 @@ task-flow/
 │   ├── package.json
 │   └── tsconfig.json
 │
-└── README.md
+├── README.md
+└── .gitignore
 ```
 
 ---
@@ -255,5 +268,8 @@ task-flow/
 
 This project was scaffolded and developed with assistance from Claude (Anthropic). All architecture decisions, code structure, and implementation details were reviewed and understood during development.
 
-## Explainer Youtube Video
-Coming Soon, Due to exam pressure it might take some time.
+---
+
+## Explainer Video
+
+Coming Soon — due to exam pressure it might take some time.
